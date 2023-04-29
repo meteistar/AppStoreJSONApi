@@ -13,6 +13,7 @@
 		C208240829FD8D2C001E3DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C208240629FD8D2C001E3DB8 /* Main.storyboard */; };
 		C208240A29FD8D34001E3DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C208240929FD8D34001E3DB8 /* Assets.xcassets */; };
 		C208240D29FD8D34001E3DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C208240B29FD8D34001E3DB8 /* LaunchScreen.storyboard */; };
+		C208241629FD8D86001E3DB8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C208241529FD8D86001E3DB8 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C208240929FD8D34001E3DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C208240C29FD8D34001E3DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C208240E29FD8D34001E3DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C208241529FD8D86001E3DB8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C208240929FD8D34001E3DB8 /* Assets.xcassets */,
 				C208240B29FD8D34001E3DB8 /* LaunchScreen.storyboard */,
 				C208240E29FD8D34001E3DB8 /* Info.plist */,
+				C208241529FD8D86001E3DB8 /* BaseTabBarController.swift */,
 			);
 			path = AppStoreJSONApi;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C208241629FD8D86001E3DB8 /* BaseTabBarController.swift in Sources */,
 				C208240529FD8D2C001E3DB8 /* ViewController.swift in Sources */,
 				C208240129FD8D2C001E3DB8 /* AppDelegate.swift in Sources */,
 				C208240329FD8D2C001E3DB8 /* SceneDelegate.swift in Sources */,
