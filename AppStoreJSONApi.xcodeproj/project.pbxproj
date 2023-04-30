@@ -58,6 +58,7 @@
 		C20823FF29FD8D2C001E3DB8 /* AppStoreJSONApi */ = {
 			isa = PBXGroup;
 			children = (
+				C208241829FE7692001E3DB8 /* Controller */,
 				C208240029FD8D2C001E3DB8 /* AppDelegate.swift */,
 				C208240229FD8D2C001E3DB8 /* SceneDelegate.swift */,
 				C208240429FD8D2C001E3DB8 /* ViewController.swift */,
@@ -65,9 +66,16 @@
 				C208240929FD8D34001E3DB8 /* Assets.xcassets */,
 				C208240B29FD8D34001E3DB8 /* LaunchScreen.storyboard */,
 				C208240E29FD8D34001E3DB8 /* Info.plist */,
-				C208241529FD8D86001E3DB8 /* BaseTabBarController.swift */,
 			);
 			path = AppStoreJSONApi;
+			sourceTree = "<group>";
+		};
+		C208241829FE7692001E3DB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C208241529FD8D86001E3DB8 /* BaseTabBarController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
