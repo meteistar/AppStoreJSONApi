@@ -12,30 +12,24 @@ class BaseTabBarController: UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.backgroundColor = .yellow
-        let redViewController = UIViewController()
-        redViewController.navigationItem.title = "Apps"
-        redViewController.view.backgroundColor = .white
-        
-        let redNavController = UINavigationController(rootViewController: redViewController)
-        redNavController.tabBarItem.title = "Apps"
-        redNavController.tabBarItem.image = #imageLiteral(resourceName: "apps")
-        redNavController.navigationBar.prefersLargeTitles = true
-        redNavController.navigationBar.backgroundColor = .white
-        
-        let blueViewController = UIViewController()
-        blueViewController.navigationItem.title = "Search"
-        blueViewController.view.backgroundColor = .white
-        
-        let blueNavController = UINavigationController(rootViewController: blueViewController)
-        blueNavController.tabBarItem.title = "Search"
-        blueNavController.tabBarItem.image = #imageLiteral(resourceName: "search")
-        blueNavController.navigationBar.prefersLargeTitles = true
-        blueNavController.navigationBar.backgroundColor = .white
-        
         viewControllers = [
-            redNavController,
-            blueNavController
+            createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon"),
+            createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps"),
+            createNavController(viewController: UIViewController(), title: "Search", imageName: "search")
         ]
+    }
+    
+    fileprivate func createNavController(viewController: UIViewController,
+        title: String, imageName: String) -> UIViewController{
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        viewController.navigationItem.title = title
+        viewController.view.backgroundColor = .white
+        
+        navController.tabBarItem.title = title
+        navController.tabBarItem.image = UIImage(named: imageName)
+        navController.navigationBar.prefersLargeTitles = true
+        navController.navigationBar.backgroundColor = .white
+        return navController
     }
 }
